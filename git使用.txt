@@ -1,0 +1,30 @@
+初始化本地仓库
+git init
+
+添加文件到本地
+git add .
+
+提交文件
+git commit -m "first commit"
+
+添加远程仓库地址到本地
+git remote add origin {address}
+git remote -v    #verify the remote URL
+
+push到远程仓库
+git push -u origin master
+
+***-------------------------------------***
+命令（删除文件时）
+1查看代码的修改状态
+git status 
+2提交已暂存的文件 git commit 
+3先同步代码到本地
+git pull
+4同步到服务器
+git push origin <本地分支名>/再同步到服务器
+***-------------------------------------***
+命令（修改文件时）
+
+
+
