@@ -3,7 +3,8 @@ git init
 
 添加文件到本地
 git add .
-
+添加文件夹
+git add folder/
 提交文件
 git commit -m "first commit"
 
