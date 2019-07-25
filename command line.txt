@@ -1,0 +1,11 @@
+command line
+
+ls [option] [fd]
+
+ls 
+
+cd 
+
+mkdir 
+
+cat
