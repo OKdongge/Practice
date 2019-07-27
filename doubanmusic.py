@@ -35,7 +35,7 @@ for index in scoresItems.items():
 	scores.append(index.text())
 
 numbersItems = doc('.pl2').find('span[class="pl"]')
-pattern = re.compile('\d+')
+pattern = re.compile(r'\d+')
 for index in numbersItems.items():
 	number = pattern.search(index.text()).group(0)
 #	collection.insert_one({"number":number})
@@ -54,27 +54,3 @@ def gentDict():
 
 print(titles,authors,scores,numbers)
 print(len(titles),len(authors),len(scores),len(numbers))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
