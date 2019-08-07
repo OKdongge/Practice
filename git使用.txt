@@ -57,3 +57,53 @@ gitignore
 #忽略除了index.php外所有文件
 ! index.php 
 
+
+
+——————————————————————————————————————————————————————————————————
+whereis python
+
+which python
+python -V 大写的V
+
+yum -y install XXX  安装环境
+wget url  #下载文件
+tar -vxf  #解压文件
+
+./configure --prefix=/usr/local/python3
+make && make install 
+
+系统自带python，通过自带软件管理器安装路径
+/usr/lib/python2.7/site-packages/
+使用pip安装的
+
+————————————————————————————————————————————————————————
+yum install lrzsz
+从Windows上传文件，上传命令为rz
+从Linux主机下载文件，下载命令为sz
+
+________________________________________________________
+linux目录使用
+/opt 用户级的程序目录，相当于D:/software 
+如：/opt/firefox
+
+
+/usr/src 系统级的源码目录
+/usr/local 用户自己编译的软件默认安装到这个目录下面
+/usr/local/src 用户级的源码目录
+
+
+___________________________________________________________
+包管理器安装(gcc、rpm、deb、)
+rpm -qal|grap xxxx
+
+
+源码安装
+whereis gcc
+which php
+
+________________________________________________________________
+切换用户
+su username
+#切换回root
+sudo su
+
