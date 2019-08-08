@@ -62,7 +62,7 @@ for index in titles.items():
 
 
 
-"""
+r"""
 authors = doc('.pl2 p')
 for index in authors:                 # <class 'lxml.html.HtmlElement'> index的属性
     print(pq(index).text().split('/')[0].strip())

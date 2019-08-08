@@ -1,0 +1,5 @@
+requests maxtries的处理
+1.在requests.get(url,verify=False)
+2.
+
+__________________________________________________________
