@@ -3,3 +3,48 @@ requests maxtries的处理
 2.
 
 __________________________________________________________
+warnning:
+UnicodeEncodeError: 'gbk' codec can't encode character: illegal multibyte sequence
+解决办法：
+import requests
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+
+——————————————————————————————————————————————————————————
+GB2312  
+\xb5
+
+ValueError: invalid literal for int() with base 10: '6387371.html'
+__________________________________________________________
+pyquery对象可以切片，但是切片完之后就变成了list
+怎么控制次数？
+doc = pq(res.text)
+data = pq(doc('dd')[:3])         #重点注意
+__________________________________________________________
+while和for循环结合，怎么执行的？
+
+
+__________________________________________________________
+#每隔五分钟访问一次
+#将最新章节对比已读列表
+#若不存在列表中，则发送邮件，添加列表。
+
+"""def parse_data(urlname):
+    html = requests.get(urlname).text
+    doc = pq(html)
+    br = doc('#content')
+    print(br)
+#    print(br.text().replace('\xa0\xa0\xa0\xa0','\n'))
+"""
+
+
+__________________________________________________________
+time模块使用
+time.time()
+time.struct_time()
+
+time.localtime()  
+#返回当前的年月日，如time.struct_time(tm_year=2018, tm_mon=12, tm_mday=27, tm_hour=23, tm_min=49, tm_sec=29, tm_wday=3, tm_yday=361, tm_isdst=0)
+time.strftime("format",time.localtime())
+#format 是时间的显示格式，%m/%d/%Y %H:%M:%S 代表：月/日/年 时：分：秒 （注意：必须是字符串形式）
+

@@ -9,7 +9,7 @@ git add folder/
 git commit -m "first commit"
 
 添加远程仓库地址到本地
-git remote add origin {address}
+git remote add origin {ress}
 git remote -v    #verify the remote URL
 
 push到远程仓库
@@ -71,10 +71,12 @@ tar -vxf  #解压文件
 
 ./configure --prefix=/usr/local/python3
 make && make install 
-
+——————————————————————————————————————————————————————————
 系统自带python，通过自带软件管理器安装路径
 /usr/lib/python2.7/site-packages/
 使用pip安装的
+
+
 
 ————————————————————————————————————————————————————————
 yum install lrzsz
@@ -106,4 +108,6 @@ ________________________________________________________________
 su username
 #切换回root
 sudo su
+
+增加权限
 
