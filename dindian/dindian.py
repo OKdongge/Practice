@@ -10,8 +10,8 @@ from pyquery import PyQuery as pq
 class Mailhelper():
     def __init__(self):
         self.mail_host = "smtp.qq.com"
-        self.mail_user = "1098498321@qq.com"
-        self.mail_pass = "oqfopmwewmebgiih"
+        self.mail_user = "example@qq.com"
+        self.mail_pass = "yourself"
         self.port = '25'
 
     def send_mail(self, to_list, sub, content):
@@ -50,6 +50,6 @@ def get_page():
 
 
 if __name__ == '__main__':
-   # mailto_list=['szl1452@163.com']
+   # mailto_list=['mailyour@163.com']
    # helper = Mailhelper()
     get_page()
