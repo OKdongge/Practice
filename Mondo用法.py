@@ -40,5 +40,12 @@ print(type(result))
 
 #_________________________________________
 
+启动：/usr/local/mongodb/bin/
+	执行/.mongo
+	show databases
+	use data
+	show collections
 
-
+创建数据库 use douban
+创建collection才生效：db.zhili.insert
+离开数据库：quit()
