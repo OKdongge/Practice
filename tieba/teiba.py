@@ -23,6 +23,8 @@ def get_data(page):
 		}
 		print(tiezi)
 		save_info(tiezi)
+def get_img():
+	pass
 
 def save_info(data):
 	try:
